@@ -18,9 +18,13 @@ App = {
   },
 
   initWeb3: function() {
-    /*
-    * Replace me...
-    */
+    // initialize web3
+    if (web3 !== 'undefined') {
+        App.web3Provider = web3.currentProvider;
+    }
+    else {
+
+    }
 
     return App.initContract();
   },
